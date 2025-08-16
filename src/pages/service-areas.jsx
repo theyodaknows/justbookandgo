@@ -140,17 +140,12 @@ const ServiceAreas = () => {
 
                   <div className="space-y-2">
                     {area.services.map((service, serviceIndex) => {
-                      const citySlug = area.city.toLowerCase().replace(/\s+/g, '-');
-                      const primaryZip = area.zips[0];
                       return (
                         <Link 
                           key={serviceIndex}
-                          href={service === 'hvac' && citySlug === 'downtown-los-angeles' ? `/hvac/downtown-los-angeles-90021/` : 
-                                service === 'electrical' && citySlug === 'glendale' ? `/electrical/glendale-91203/` :
-                                service === 'plumbing' && citySlug === 'santa-monica' ? `/plumbing/santa-monica-90401/` :
-                              service === 'hvac' && citySlug === 'burbank' ? `/hvac/burbank-91505/` :
-                              service === 'electrical' && citySlug === 'pasadena' ? `/electrical/pasadena-91101/` :
-                                `/${service}/${citySlug}-${primaryZip}/`}
+                          href="https://book.housecallpro.com/book/Just-Book-and-Go/41d94939a0a24ce1b241aacb864a5d54?v2=true"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2 px-4 rounded transition-colors"
                         >
                           {service.charAt(0).toUpperCase() + service.slice(1)} in {area.city}
