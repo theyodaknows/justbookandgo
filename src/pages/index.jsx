@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 import IndexSectionCustomComponents2 from '../components/custom-components/IndexSectionCustomComponents2';
-import IndexSectionHeaders1 from '../components/headers/IndexSectionHeaders1';
 
 const Index = () => {
   return (
