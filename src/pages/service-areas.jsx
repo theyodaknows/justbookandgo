@@ -48,6 +48,24 @@ const ServiceAreas = () => {
     }
   ];
 
+  // Add Long Beach and Torrance to service areas
+  serviceAreas.push(
+    {
+      city: 'Long Beach',
+      zips: ['90802', '90803', '90804', '90805', '90806', '90807', '90808', '90815'],
+      description: 'Coastal city with diverse residential and commercial needs, from Belmont Shore to Downtown Long Beach.',
+      services: ['plumbing', 'hvac', 'electrical'],
+      neighborhoods: ['Belmont Shore', 'Downtown Long Beach', 'Naples', 'Alamitos Beach']
+    },
+    {
+      city: 'Torrance',
+      zips: ['90501', '90502', '90503', '90504', '90505'],
+      description: 'South Bay community with mix of residential neighborhoods and industrial/commercial areas.',
+      services: ['plumbing', 'hvac', 'electrical'],
+      neighborhoods: ['Old Torrance', 'Southwood', 'Del Amo', 'Walteria']
+    }
+  );
+
   return (
     <>
       <Head>

@@ -34,6 +34,38 @@ const nextConfig = {
         destination: '/electrical/pasadena-91101/',
         permanent: true,
       },
+      // Long Beach vanity redirects
+      {
+        source: '/lb-plumber',
+        destination: '/plumbing/long-beach-90802/',
+        permanent: true,
+      },
+      {
+        source: '/lb-hvac',
+        destination: '/hvac/long-beach-90813/',
+        permanent: true,
+      },
+      {
+        source: '/lb-electric',
+        destination: '/electrical/long-beach-90806/',
+        permanent: true,
+      },
+      // Torrance vanity redirects
+      {
+        source: '/torrance-plumber',
+        destination: '/plumbing/torrance-90503/',
+        permanent: true,
+      },
+      {
+        source: '/torrance-hvac',
+        destination: '/hvac/torrance-90501/',
+        permanent: true,
+      },
+      {
+        source: '/torrance-electric',
+        destination: '/electrical/torrance-90505/',
+        permanent: true,
+      },
       // Optional extras
       {
         source: '/emergency-plumber-90210',
