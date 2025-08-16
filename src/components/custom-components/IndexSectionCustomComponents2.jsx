@@ -19,184 +19,252 @@ const IndexSectionCustomComponents2 = () => {
     {/* Hero Section */}
     <div className="relative z-10 px-4 py-16 md:py-32 text-center flex flex-col justify-center min-h-screen">
       <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
-        24/7 Licensed Plumbers in Downtown Los Angeles
-        <br />
-        <span style={{color: '#FF6B00'}}>Fast, Affordable Service</span>
+        👉 Plumbing, HVAC & Electrical Services in Los Angeles — Book in Seconds!
       </h1>
       <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto">
-        Need a plumber in Downtown L.A. today? Justbookandgo connects you instantly with licensed professionals ready to tackle leaks, clogs, and repairs in 90013, 90014, and 90021.
+        Trusted, licensed professionals serving homes and businesses across Los Angeles. Same-day service, upfront pricing, and guaranteed work.
       </p>
-      {/* Call to Action */}
-      <div className="max-w-md mx-auto bg-white rounded-lg p-6 shadow-xl">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4 tracking-tight">Get a Free Quote in Minutes</h2>
-        <p className="text-gray-600 mb-6">Call now to speak with a Downtown L.A. service professional and get your free quote over the phone.</p>
-        <a href="tel:833-413-3478" style={{backgroundColor: '#0A84FF'}} className="block w-full hover:bg-blue-700 text-white font-bold py-4 px-8 rounded transition-colors text-center mb-3">📞 Call Now: 833-413-3478</a>
-        <p className="text-sm text-gray-500">Book online and get 10% off your first service</p>
+      {/* CTA Buttons */}
+      <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-8">
+        <a href="tel:833-413-3478" style={{backgroundColor: '#0A84FF'}} className="block hover:bg-blue-700 text-white font-bold py-4 px-8 rounded transition-colors text-center">📞 Call 833-413-3478</a>
+        <a href="#services" style={{backgroundColor: '#FF6B00'}} className="block hover:bg-orange-700 text-white font-bold py-4 px-8 rounded transition-colors text-center">🚀 Request Service Online</a>
+      </div>
+      {/* Trust Bar */}
+      <div className="flex flex-col md:flex-row gap-4 justify-center items-center text-white text-lg">
+        <span>Licensed & Insured</span>
+        <span className="hidden md:inline">•</span>
+        <span>24/7 Emergency Repairs</span>
+        <span className="hidden md:inline">•</span>
+        <span>5-Star Rated</span>
       </div>
     </div>
   </header>
-  {/* Services Section */}
-  <section className="py-16 bg-gray-50">
+
+  {/* Service Overview Section */}
+  <section id="services" className="py-16 bg-gray-50">
     <div className="max-w-7xl mx-auto px-4">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4 tracking-tight">Expert Services in Downtown Los Angeles</h2>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">Professional home services you can trust. Available 24/7 for emergency calls in Downtown L.A.</p>
+        <h2 className="text-4xl font-bold text-gray-800 mb-4 tracking-tight">Our Expert Home Services in Los Angeles</h2>
       </div>
       <div className="grid md:grid-cols-3 gap-8">
         {/* Plumbing */}
         <div className="bg-white rounded-lg shadow-lg p-8 text-center">
-          <img className="w-20 h-20 mx-auto mb-6 rounded-full object-cover" src="https://images.pexels.com/photos/8486944/pexels-photo-8486944.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="Plumbing Services Downtown LA" />
-          <h3 className="text-2xl font-bold text-gray-800 mb-4 tracking-tight">Plumbing Services in Downtown L.A.</h3>
-          <p className="text-gray-600 mb-6">From leaky faucets to major pipe repairs, our licensed Downtown L.A. plumbers handle it all.</p>
-          <ul className="text-sm text-gray-600 text-left mb-6">
-            <li className="mb-2">• Emergency leak repairs</li>
-            <li className="mb-2">• Drain cleaning &amp; unclogging</li>
-            <li className="mb-2">• Fixture installation</li>
-            <li className="mb-2">• Water heater services</li>
-          </ul>
-          <a href="tel:833-413-3478" style={{backgroundColor: '#FF6B00'}} className="inline-block w-full py-3 px-6 text-white text-center font-semibold rounded hover:bg-orange-700 transition-colors">Call Now: 833-413-3478</a>
+          <div className="text-6xl mb-6">🚰</div>
+          <h3 className="text-2xl font-bold text-gray-800 mb-4 tracking-tight">Plumbing Services</h3>
+          <p className="text-gray-600 mb-6">Emergency repairs, drain cleaning, leak detection, and water heater installation. Our Los Angeles plumbers are available 24/7 to keep your water flowing.</p>
+          <a href="/plumbing/beverly-hills-90210/" style={{backgroundColor: '#FF6B00'}} className="inline-block w-full py-3 px-6 text-white text-center font-semibold rounded hover:bg-orange-700 transition-colors">View Plumbing Services</a>
         </div>
         {/* HVAC */}
         <div className="bg-white rounded-lg shadow-lg p-8 text-center">
-          <img className="w-20 h-20 mx-auto mb-6 rounded-full object-cover" src="https://images.pexels.com/photos/5691659/pexels-photo-5691659.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="HVAC Services Downtown LA" />
-          <h3 className="text-2xl font-bold text-gray-800 mb-4 tracking-tight">HVAC Installation Downtown L.A.</h3>
-          <p className="text-gray-600 mb-6">Keep your Downtown L.A. home comfortable year-round with our heating and cooling experts.</p>
-          <ul className="text-sm text-gray-600 text-left mb-6">
-            <li className="mb-2">• AC installation &amp; repair</li>
-            <li className="mb-2">• Heating system service</li>
-            <li className="mb-2">• Duct cleaning &amp; sealing</li>
-            <li className="mb-2">• Energy efficiency upgrades</li>
-          </ul>
-          <a href="tel:833-413-3478" style={{backgroundColor: '#0A84FF'}} className="inline-block w-full py-3 px-6 text-white text-center font-semibold rounded hover:bg-blue-700 transition-colors">Call Now: 833-413-3478</a>
+          <div className="text-6xl mb-6">❄️</div>
+          <h3 className="text-2xl font-bold text-gray-800 mb-4 tracking-tight">HVAC Services</h3>
+          <p className="text-gray-600 mb-6">From AC installation to furnace repair, our HVAC technicians make sure your home stays comfortable year-round. Fast response across all of Los Angeles.</p>
+          <a href="/hvac/downtown-los-angeles-90021/" style={{backgroundColor: '#0A84FF'}} className="inline-block w-full py-3 px-6 text-white text-center font-semibold rounded hover:bg-blue-700 transition-colors">View HVAC Services</a>
         </div>
         {/* Electrical */}
         <div className="bg-white rounded-lg shadow-lg p-8 text-center">
-          <img className="w-20 h-20 mx-auto mb-6 rounded-full object-cover" src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="Electrical Services Arts District" />
-          <h3 className="text-2xl font-bold text-gray-800 mb-4 tracking-tight">Electrical Repairs Arts District</h3>
-          <p className="text-gray-600 mb-6">Safe, reliable electrical work from certified electricians serving the Arts District and Downtown L.A.</p>
-          <ul className="text-sm text-gray-600 text-left mb-6">
-            <li className="mb-2">• Outlet &amp; switch installation</li>
-            <li className="mb-2">• Panel upgrades</li>
-            <li className="mb-2">• Lighting installation</li>
-            <li className="mb-2">• Electrical troubleshooting</li>
-          </ul>
-          <a href="tel:833-413-3478" style={{backgroundColor: '#FF6B00'}} className="inline-block w-full py-3 px-6 text-white text-center font-semibold rounded hover:bg-orange-700 transition-colors">Call Now: 833-413-3478</a>
+          <div className="text-6xl mb-6">⚡</div>
+          <h3 className="text-2xl font-bold text-gray-800 mb-4 tracking-tight">Electrical Services</h3>
+          <p className="text-gray-600 mb-6">Licensed electricians for panel upgrades, lighting installs, EV chargers, and complete rewiring. Serving both residential and commercial properties.</p>
+          <a href="/electrical/glendale-91203/" style={{backgroundColor: '#FF6B00'}} className="inline-block w-full py-3 px-6 text-white text-center font-semibold rounded hover:bg-orange-700 transition-colors">View Electrical Services</a>
         </div>
+      </div>
+      <div className="text-center mt-12">
+        <p className="text-xl text-gray-600 mb-6">👉 Explore our services and book today — Justbookandgo makes it simple.</p>
       </div>
     </div>
   </section>
+
   {/* Why Choose Us */}
   <section className="py-16 bg-white">
     <div className="max-w-7xl mx-auto px-4">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4 tracking-tight">Why Choose Justbookandgo in Downtown L.A.?</h2>
-        <p className="text-xl text-gray-600">We make getting home services in Downtown Los Angeles simple, fast, and reliable.</p>
+        <h2 className="text-4xl font-bold text-gray-800 mb-4 tracking-tight">Why Los Angeles Homeowners & Businesses Trust Us</h2>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
         <div className="text-center">
           <div style={{backgroundColor: '#0A84FF'}} className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
             <span className="text-white text-2xl font-bold">⚡</span>
           </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-2 tracking-tight">Local L.A. Technicians</h3>
-          <p className="text-gray-600">We're nearby and ready. Fast arrival times in Downtown Los Angeles and surrounding ZIPs.</p>
+          <h3 className="text-xl font-bold text-gray-800 mb-2 tracking-tight">Fast Response Across LA & Surrounding Cities</h3>
         </div>
         <div className="text-center">
           <div style={{backgroundColor: '#FF6B00'}} className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
             <span className="text-white text-2xl font-bold">✓</span>
           </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-2 tracking-tight">Licensed & Vetted</h3>
-          <p className="text-gray-600">Licensed, insured, and vetted professionals serving Downtown L.A.</p>
+          <h3 className="text-xl font-bold text-gray-800 mb-2 tracking-tight">Licensed, Certified, & Insured Professionals</h3>
         </div>
         <div className="text-center">
           <div style={{backgroundColor: '#0A84FF'}} className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
             <span className="text-white text-2xl font-bold">$</span>
           </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-2 tracking-tight">Fair Pricing</h3>
-          <p className="text-gray-600">Upfront pricing with no hidden fees. Get quotes before we start.</p>
+          <h3 className="text-xl font-bold text-gray-800 mb-2 tracking-tight">Upfront, Transparent Pricing — No Hidden Fees</h3>
         </div>
         <div className="text-center">
           <div style={{backgroundColor: '#FF6B00'}} className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span className="text-white text-2xl font-bold">🕐</span>
+          </div>
+          <h3 className="text-xl font-bold text-gray-800 mb-2 tracking-tight">24/7 Emergency Availability</h3>
+        </div>
+        <div className="text-center">
+          <div style={{backgroundColor: '#0A84FF'}} className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
             <span className="text-white text-2xl font-bold">★</span>
           </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-2 tracking-tight">Guaranteed</h3>
-          <p className="text-gray-600">100% satisfaction guarantee on all work. We stand behind our service.</p>
+          <h3 className="text-xl font-bold text-gray-800 mb-2 tracking-tight">Hundreds of Happy Local Customers</h3>
+        </div>
+      </div>
+      <div className="text-center mt-12">
+        <div style={{backgroundColor: '#FF6B00'}} className="inline-block py-4 px-8 rounded-lg">
+          <p className="text-white text-xl font-bold">📞 Call 833-413-3478 now — available day & night in Los Angeles!</p>
         </div>
       </div>
     </div>
   </section>
+
+  {/* Featured Service Areas */}
+  <section className="py-16 bg-gray-50">
+    <div className="max-w-7xl mx-auto px-4">
+      <div className="text-center mb-12">
+        <h2 className="text-4xl font-bold text-gray-800 mb-4 tracking-tight">Proudly Serving Los Angeles & Surrounding Communities</h2>
+      </div>
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+          <h3 className="text-xl font-bold text-gray-800 mb-3">Beverly Hills</h3>
+          <div className="space-y-2">
+            <a href="/plumbing/beverly-hills-90210/" className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
+            <a href="/hvac/beverly-hills-90210/" className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
+            <a href="/electrical/beverly-hills-90210/" className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
+          </div>
+        </div>
+        <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+          <h3 className="text-xl font-bold text-gray-800 mb-3">Santa Monica</h3>
+          <div className="space-y-2">
+            <a href="/plumbing/santa-monica-90401/" className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
+            <a href="/hvac/santa-monica-90401/" className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
+            <a href="/electrical/santa-monica-90401/" className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
+          </div>
+        </div>
+        <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+          <h3 className="text-xl font-bold text-gray-800 mb-3">Pasadena</h3>
+          <div className="space-y-2">
+            <a href="/plumbing/pasadena-91101/" className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
+            <a href="/hvac/pasadena-91101/" className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
+            <a href="/electrical/pasadena-91101/" className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
+          </div>
+        </div>
+        <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+          <h3 className="text-xl font-bold text-gray-800 mb-3">Glendale</h3>
+          <div className="space-y-2">
+            <a href="/plumbing/glendale-91203/" className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
+            <a href="/hvac/glendale-91203/" className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
+            <a href="/electrical/glendale-91203/" className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
+          </div>
+        </div>
+        <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+          <h3 className="text-xl font-bold text-gray-800 mb-3">Burbank</h3>
+          <div className="space-y-2">
+            <a href="/plumbing/burbank-91505/" className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
+            <a href="/hvac/burbank-91505/" className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
+            <a href="/electrical/burbank-91505/" className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
+          </div>
+        </div>
+        <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+          <h3 className="text-xl font-bold text-gray-800 mb-3">Long Beach</h3>
+          <div className="space-y-2">
+            <a href="/plumbing/long-beach-90802/" className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
+            <a href="/hvac/long-beach-90813/" className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
+            <a href="/electrical/long-beach-90806/" className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
+          </div>
+        </div>
+        <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+          <h3 className="text-xl font-bold text-gray-800 mb-3">Torrance</h3>
+          <div className="space-y-2">
+            <a href="/plumbing/torrance-90503/" className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
+            <a href="/hvac/torrance-90501/" className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
+            <a href="/electrical/torrance-90505/" className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
+          </div>
+        </div>
+        <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+          <h3 className="text-xl font-bold text-gray-800 mb-3">Downtown LA</h3>
+          <div className="space-y-2">
+            <a href="/plumbing/downtown-los-angeles-90013/" className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
+            <a href="/hvac/downtown-los-angeles-90021/" className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
+            <a href="/electrical/downtown-los-angeles-90013/" className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
+          </div>
+        </div>
+      </div>
+      <div className="text-center mt-12">
+        <a href="/service-areas/" className="text-xl text-blue-600 hover:text-blue-800 font-semibold transition-colors">👉 See all service areas →</a>
+      </div>
+    </div>
+  </section>
+
+  {/* Customer Testimonials */}
+  <section className="py-16 bg-white">
+    <div className="max-w-7xl mx-auto px-4">
+      <div className="text-center mb-12">
+        <h2 className="text-4xl font-bold text-gray-800 mb-4 tracking-tight">What Our Customers Say</h2>
+      </div>
+      <div className="grid md:grid-cols-3 gap-8">
+        <div className="bg-gray-50 rounded-lg p-6 shadow-md">
+          <div className="text-yellow-400 text-2xl mb-4">⭐ ⭐ ⭐ ⭐ ⭐</div>
+          <p className="text-gray-600 mb-4">"Justbookandgo saved us when our water heater burst at midnight in Beverly Hills. They had a plumber at our house in under an hour!"</p>
+          <p className="font-semibold text-gray-800">– Maria G., Beverly Hills</p>
+        </div>
+        <div className="bg-gray-50 rounded-lg p-6 shadow-md">
+          <div className="text-yellow-400 text-2xl mb-4">⭐ ⭐ ⭐ ⭐ ⭐</div>
+          <p className="text-gray-600 mb-4">"Our AC went out during a heatwave in Downtown LA. Their HVAC tech was professional and got us cooled down same-day."</p>
+          <p className="font-semibold text-gray-800">– David L., Los Angeles</p>
+        </div>
+        <div className="bg-gray-50 rounded-lg p-6 shadow-md">
+          <div className="text-yellow-400 text-2xl mb-4">⭐ ⭐ ⭐ ⭐ ⭐</div>
+          <p className="text-gray-600 mb-4">"We hired Justbookandgo electricians for a panel upgrade in Pasadena. Smooth, fast, and fairly priced."</p>
+          <p className="font-semibold text-gray-800">– Kim R., Pasadena</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   {/* FAQ Section */}
   <section className="py-16 bg-gray-50">
     <div className="max-w-4xl mx-auto px-4">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-gray-800 mb-4 tracking-tight">Frequently Asked Questions</h2>
-        <p className="text-xl text-gray-600">Common questions about our Downtown Los Angeles services</p>
       </div>
       <div className="space-y-8">
         <div className="bg-white rounded-lg p-6 shadow-md">
-          <h3 className="text-xl font-bold text-gray-800 mb-3">Do you provide emergency plumbing services in Downtown Los Angeles?</h3>
-          <p className="text-gray-600">Yes, we offer 24/7 emergency plumbing services throughout Downtown Los Angeles, including zip codes 90013, 90014, and 90021. Our licensed plumbers can respond quickly to urgent repairs.</p>
+          <h3 className="text-xl font-bold text-gray-800 mb-3">Do you offer 24/7 plumbing service in Los Angeles?</h3>
+          <p className="text-gray-600">Yes! Our licensed plumbers are available day and night for emergency repairs.</p>
         </div>
         <div className="bg-white rounded-lg p-6 shadow-md">
-          <h3 className="text-xl font-bold text-gray-800 mb-3">What areas of Downtown Los Angeles do you serve?</h3>
-          <p className="text-gray-600">We serve all of Downtown Los Angeles including the Arts District, Little Tokyo, Chinatown, and surrounding neighborhoods. We also extend our services to Glendale and Culver City.</p>
+          <h3 className="text-xl font-bold text-gray-800 mb-3">How fast can you send an HVAC technician?</h3>
+          <p className="text-gray-600">In most Los Angeles areas, we can arrive same-day — often within 2 hours.</p>
         </div>
         <div className="bg-white rounded-lg p-6 shadow-md">
-          <h3 className="text-xl font-bold text-gray-800 mb-3">How quickly can you arrive for service calls in Downtown L.A.?</h3>
-          <p className="text-gray-600">Our local Downtown Los Angeles technicians typically arrive within 30-60 minutes for emergency calls and can schedule same-day service for non-emergency repairs.</p>
+          <h3 className="text-xl font-bold text-gray-800 mb-3">Do you service both homes and businesses?</h3>
+          <p className="text-gray-600">Absolutely. We provide residential and commercial HVAC, plumbing, and electrical services across Los Angeles County.</p>
         </div>
         <div className="bg-white rounded-lg p-6 shadow-md">
-          <h3 className="text-xl font-bold text-gray-800 mb-3">Are your technicians licensed to work in Downtown Los Angeles?</h3>
-          <p className="text-gray-600">Absolutely! All our plumbers, HVAC technicians, and electricians are fully licensed, insured, and bonded to work throughout Los Angeles County, including Downtown L.A.</p>
+          <h3 className="text-xl font-bold text-gray-800 mb-3">Are your electricians licensed in California?</h3>
+          <p className="text-gray-600">Yes, all of our technicians are licensed, bonded, and insured.</p>
         </div>
       </div>
     </div>
   </section>
-  {/* Service Areas */}
-  <section className="py-16 bg-white">
-    <div className="max-w-6xl mx-auto px-4">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4 tracking-tight">Service Areas</h2>
-        <p className="text-xl text-gray-600">Proudly serving Downtown Los Angeles and surrounding communities</p>
-      </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div className="text-center">
-          <h3 className="text-xl font-bold text-gray-800 mb-3">Downtown Los Angeles</h3>
-          <ul className="text-gray-600 space-y-1">
-            <li>90013 - Arts District</li>
-            <li>90014 - Historic Core</li>
-            <li>90021 - Fashion District</li>
-          </ul>
-        </div>
-        <div className="text-center">
-          <h3 className="text-xl font-bold text-gray-800 mb-3">Nearby Neighborhoods</h3>
-          <ul className="text-gray-600 space-y-1">
-            <li>Little Tokyo</li>
-            <li>Chinatown</li>
-            <li>Bunker Hill</li>
-          </ul>
-        </div>
-        <div className="text-center">
-          <h3 className="text-xl font-bold text-gray-800 mb-3">Extended Areas</h3>
-          <ul className="text-gray-600 space-y-1">
-            <li><a href="#" className="hover:text-orange-500 transition-colors">Glendale</a></li>
-            <li><a href="#" className="hover:text-orange-500 transition-colors">Culver City</a></li>
-            <li><a href="#" className="hover:text-orange-500 transition-colors">Hollywood</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* CTA Section */}
+
+  {/* Closing CTA Section */}
   <section style={{backgroundColor: '#0A84FF'}} className="py-16 text-white">
     <div className="max-w-4xl mx-auto px-4 text-center">
-      <h2 className="text-4xl font-bold mb-6 tracking-tight">Need Service in Downtown L.A. Today?</h2>
-      <p className="text-xl mb-8">Don't wait for small problems to become big ones. Call now for immediate assistance in Downtown Los Angeles.</p>
-      <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+      <h2 className="text-4xl font-bold mb-6 tracking-tight">Ready to Fix It Fast? Call Now!</h2>
+      <p className="text-xl mb-8">📞 Call 833-413-3478 or Book Online at Justbookandgo.com</p>
+      <p className="text-lg">Serving Greater Los Angeles with Plumbing, HVAC & Electrical Experts.</p>
+      <div className="flex flex-col md:flex-row gap-4 justify-center items-center mt-8">
         <a href="tel:833-413-3478" style={{backgroundColor: '#FF6B00'}} className="inline-block py-4 px-8 text-white font-bold text-lg rounded hover:bg-orange-700 transition-colors">📞 Call Now: 833-413-3478</a>
-        <span className="text-white">Available 24/7 for Emergency Service</span>
+        <a href="/service-areas/" className="inline-block py-4 px-8 bg-white text-blue-600 font-bold text-lg rounded hover:bg-gray-100 transition-colors">🚀 Request Service Online</a>
       </div>
     </div>
   </section>
+
   {/* Footer */}
   <footer className="bg-gray-900 text-white py-12">
     <div className="max-w-7xl mx-auto px-4">
@@ -207,43 +275,43 @@ const IndexSectionCustomComponents2 = () => {
             <span style={{color: '#FF6B00'}}>book</span>
             <span style={{color: '#0A84FF'}}>andgo</span>
           </div>
-          <p className="text-gray-300 mb-4">Your trusted partner for all home service needs in Downtown Los Angeles. Fast, reliable, and professional.</p>
+          <p className="text-gray-300 mb-4">Your trusted partner for all home service needs in Los Angeles. Fast, reliable, and professional.</p>
           <div className="text-gray-300 mb-4">
             <p>123 Main Street</p>
-            <p>Downtown Los Angeles, CA 90013</p>
+            <p>Los Angeles, CA 90013</p>
           </div>
           <a href="tel:833-413-3478" className="text-orange-400 font-bold">📞 833-413-3478</a>
         </div>
         <div>
-          <h3 className="text-lg font-bold mb-4 tracking-tight">Downtown L.A. Services</h3>
+          <h3 className="text-lg font-bold mb-4 tracking-tight">Los Angeles Services</h3>
           <ul className="space-y-2 text-gray-300">
-            <li><a href="#" className="hover:text-orange-400 transition-colors">Downtown L.A. Plumbing</a></li>
-            <li><a href="#" className="hover:text-orange-400 transition-colors">HVAC Installation</a></li>
-            <li><a href="#" className="hover:text-orange-400 transition-colors">Arts District Electrical</a></li>
+            <li><a href="/plumbing/beverly-hills-90210/" className="hover:text-orange-400 transition-colors">Plumbing Services</a></li>
+            <li><a href="/hvac/downtown-los-angeles-90021/" className="hover:text-orange-400 transition-colors">HVAC Services</a></li>
+            <li><a href="/electrical/glendale-91203/" className="hover:text-orange-400 transition-colors">Electrical Services</a></li>
             <li><a href="#" className="hover:text-orange-400 transition-colors">Emergency Services</a></li>
           </ul>
         </div>
         <div>
-          <h3 className="text-lg font-bold mb-4 tracking-tight">Company</h3>
+          <h3 className="text-lg font-bold mb-4 tracking-tight">Service Areas</h3>
           <ul className="space-y-2 text-gray-300">
-            <li><a href="#" className="hover:text-orange-400 transition-colors">About Us</a></li>
-            <li><a href="#" className="hover:text-orange-400 transition-colors">Service Areas</a></li>
-            <li><a href="#" className="hover:text-orange-400 transition-colors">Reviews</a></li>
-            <li><a href="#" className="hover:text-orange-400 transition-colors">Careers</a></li>
+            <li><a href="/plumbing/beverly-hills-90210/" className="hover:text-orange-400 transition-colors">Beverly Hills</a></li>
+            <li><a href="/plumbing/santa-monica-90401/" className="hover:text-orange-400 transition-colors">Santa Monica</a></li>
+            <li><a href="/electrical/pasadena-91101/" className="hover:text-orange-400 transition-colors">Pasadena</a></li>
+            <li><a href="/service-areas/" className="hover:text-orange-400 transition-colors">All Areas</a></li>
           </ul>
         </div>
         <div>
           <h3 className="text-lg font-bold mb-4 tracking-tight">Contact</h3>
           <ul className="space-y-2 text-gray-300">
             <li>Available 24/7</li>
-            <li>Licensed &amp; Insured</li>
+            <li>Licensed & Insured</li>
             <li>Same-Day Service</li>
             <li>Free Estimates</li>
           </ul>
         </div>
       </div>
       <div className="border-t border-gray-700 pt-8 text-center text-gray-400">
-        <p>© 2024 Justbookandgo. All rights reserved. | Licensed, Bonded &amp; Insured in Los Angeles County</p>
+        <p>© 2024 Justbookandgo. All rights reserved. | Licensed, Bonded & Insured in Los Angeles County</p>
       </div>
     </div>
   </footer>
