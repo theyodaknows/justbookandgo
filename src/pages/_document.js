@@ -13,6 +13,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-TXTHSMB2');`
                 }} />
                 {/* End Google Tag Manager */}
+                {/* Favicon */}
+                <link rel="icon" type="image/png" href="/favicon.png" />
                             </Head>
             <body className="antialiased bg-body text-body font-body">
                 {/* Google Tag Manager (noscript) */}
