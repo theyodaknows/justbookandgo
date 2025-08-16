@@ -1,13 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 const IndexSectionCustomComponents2 = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+        if (videoRef.current) {
+            videoRef.current.play().catch(() => {
+                // Autoplay was prevented, which is fine
+            });
+        }
+    }, []);
 
     return (
         <div>
   {/* Header */}
   <header className="relative bg-gray-900 overflow-hidden min-h-screen">
-    <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover opacity-40">
+    <video ref={videoRef} muted loop className="absolute inset-0 w-full h-full object-cover opacity-40">
       <source src="https://res.cloudinary.com/dcmt0xia1/video/upload/v1755222018/header_ax2vqw.mp4" type="video/mp4" />
     </video>
     <nav className="relative z-10 flex items-center justify-between p-4 md:px-8">
