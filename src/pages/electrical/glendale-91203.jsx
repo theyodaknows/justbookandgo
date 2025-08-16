@@ -106,6 +106,7 @@ const GlendaleElectrical = () => {
               <div className="bg-white rounded-lg shadow-lg p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">Main Panel & Subpanel Upgrades</h3>
                 <p className="text-gray-600 mb-4">Complete load calculations and panel upgrades to meet modern electrical demands.</p>
+                <img className="w-full h-48 object-cover rounded-lg mb-4" src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Glendale electrician upgrading electrical panel in 91203 home" />
                 <ul className="text-sm text-gray-600 space-y-1">
                   <li>• Load calculations</li>
                   <li>• 100A to 200A upgrades</li>
@@ -117,6 +118,7 @@ const GlendaleElectrical = () => {
               <div className="bg-white rounded-lg shadow-lg p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">EV Charger Installation</h3>
                 <p className="text-gray-600 mb-4">Professional EV charging station installation with proper permits and inspections.</p>
+                <img className="w-full h-48 object-cover rounded-lg mb-4" src="https://images.pexels.com/photos/7841419/pexels-photo-7841419.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Glendale electrician installing EV charger in residential garage" />
                 <ul className="text-sm text-gray-600 space-y-1">
                   <li>• NEMA 14-50 outlets</li>
                   <li>• Wall-mounted units</li>
@@ -215,18 +217,30 @@ const GlendaleElectrical = () => {
         {/* Service Areas */}
         <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 text-center">
-            <h3 className="text-3xl font-bold text-gray-800 mb-8">Areas We Serve</h3>
+            <h2 className="text-3xl font-bold text-gray-800 mb-8">Glendale Areas We Serve</h2>
+            <div className="mb-8">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26427.742661736546!2d-118.2551!3d34.1425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0x5eeb7dd5b5b5b5b5!2sGlendale%2C%20CA%2091203!5e0!3m2!1sen!2sus!4v1234567890"
+                width="100%" 
+                height="300" 
+                style={{border: 0}} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Glendale 91203 Electrical Service Area Map"
+              ></iframe>
+            </div>
             <div className="grid md:grid-cols-3 gap-8">
               <div>
-                <h4 className="text-xl font-bold text-gray-800 mb-4">Primary Service ZIPs</h4>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Primary Service ZIPs</h3>
                 <p className="text-gray-600">91203, 91204, 91205</p>
               </div>
               <div>
-                <h4 className="text-xl font-bold text-gray-800 mb-4">Nearby Areas</h4>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Nearby Areas</h3>
                 <p className="text-gray-600">Atwater Village, Eagle Rock</p>
               </div>
               <div>
-                <h4 className="text-xl font-bold text-gray-800 mb-4">Also Serving</h4>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Also Serving</h3>
                 <p className="text-gray-600">
                   <a href="/electrical/burbank-91505/" className="text-blue-600 hover:text-blue-800">Burbank</a> | 
                   <a href="/electrical/pasadena-91101/" className="text-blue-600 hover:text-blue-800 ml-2">Pasadena</a>

@@ -106,6 +106,7 @@ const DowntownLAHVAC = () => {
               <div className="bg-white rounded-lg shadow-lg p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">Emergency Repairs</h3>
                 <p className="text-gray-600 mb-4">Fast response for critical system failures in Downtown LA's Industrial District.</p>
+                <img className="w-full h-48 object-cover rounded-lg mb-4" src="https://images.pexels.com/photos/5691659/pexels-photo-5691659.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Downtown LA HVAC technician repairing rooftop unit in Industrial District" />
                 <ul className="text-sm text-gray-600 space-y-1">
                   <li>• Compressor failures</li>
                   <li>• Motor replacements</li>
@@ -139,6 +140,7 @@ const DowntownLAHVAC = () => {
               <div className="bg-white rounded-lg shadow-lg p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">Rooftop Unit Install/Replace</h3>
                 <p className="text-gray-600 mb-4">Complete RTU installations with permits and crane coordination.</p>
+                <img className="w-full h-48 object-cover rounded-lg mb-4" src="https://images.pexels.com/photos/8486944/pexels-photo-8486944.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Downtown LA HVAC crew installing rooftop unit with crane in 90021" />
                 <ul className="text-sm text-gray-600 space-y-1">
                   <li>• Permit pulling</li>
                   <li>• Crane scheduling</li>
@@ -244,18 +246,30 @@ const DowntownLAHVAC = () => {
         {/* Coverage Area */}
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 text-center">
-            <h3 className="text-3xl font-bold text-gray-800 mb-8">Coverage Area</h3>
+            <h2 className="text-3xl font-bold text-gray-800 mb-8">Downtown LA Coverage Area</h2>
+            <div className="mb-8">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26427.742661736546!2d-118.2441!3d34.0194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b89b8b8b8b%3A0x1e3c3d8b0e5b5c5d!2sDowntown%20Los%20Angeles%2C%20CA%2090021!5e0!3m2!1sen!2sus!4v1234567890"
+                width="100%" 
+                height="300" 
+                style={{border: 0}} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Downtown Los Angeles Industrial District Service Area Map"
+              ></iframe>
+            </div>
             <div className="grid md:grid-cols-3 gap-8">
               <div>
-                <h4 className="text-xl font-bold text-gray-800 mb-4">Primary Service ZIPs</h4>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Primary Service ZIPs</h3>
                 <p className="text-gray-600">90013, 90014, 90021</p>
               </div>
               <div>
-                <h4 className="text-xl font-bold text-gray-800 mb-4">Adjacent Areas</h4>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Adjacent Areas</h3>
                 <p className="text-gray-600">90012, 90015 (on request)</p>
               </div>
               <div>
-                <h4 className="text-xl font-bold text-gray-800 mb-4">Also Serving</h4>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Also Serving</h3>
                 <p className="text-gray-600">
                   <a href="/hvac/glendale-91203/" className="text-blue-600 hover:text-blue-800">Glendale</a> | 
                   <a href="/hvac/burbank-91505/" className="text-blue-600 hover:text-blue-800 ml-2">Burbank</a>

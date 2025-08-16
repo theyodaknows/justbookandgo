@@ -106,6 +106,7 @@ const BeverlyHillsPlumbing = () => {
               <div className="bg-white rounded-lg shadow-lg p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">Leak Detection & Repair</h3>
                 <p className="text-gray-600 mb-4">High-pressure homes and luxury fixtures require expert care. We handle complex leak detection and precision repairs.</p>
+                <img className="w-full h-48 object-cover rounded-lg mb-4" src="https://images.pexels.com/photos/8486944/pexels-photo-8486944.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Beverly Hills plumber detecting water leak in luxury home" />
                 <ul className="text-sm text-gray-600 space-y-1">
                   <li>• Electronic leak detection</li>
                   <li>• Slab leak repair</li>
@@ -126,6 +127,7 @@ const BeverlyHillsPlumbing = () => {
               <div className="bg-white rounded-lg shadow-lg p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">Water Heater Services</h3>
                 <p className="text-gray-600 mb-4">Tank and tankless water heater repair, replacement, and maintenance for Beverly Hills homes.</p>
+                <img className="w-full h-48 object-cover rounded-lg mb-4" src="https://images.pexels.com/photos/5691659/pexels-photo-5691659.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Beverly Hills plumber replacing water heater in luxury residence" />
                 <ul className="text-sm text-gray-600 space-y-1">
                   <li>• Tankless installations</li>
                   <li>• Emergency repairs</li>
@@ -222,18 +224,30 @@ const BeverlyHillsPlumbing = () => {
         {/* Neighborhoods Served */}
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 text-center">
-            <h3 className="text-3xl font-bold text-gray-800 mb-8">Beverly Hills Areas We Serve</h3>
+            <h2 className="text-3xl font-bold text-gray-800 mb-8">Beverly Hills Areas We Serve</h2>
+            <div className="mb-8">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26427.742661736546!2d-118.42034!3d34.0736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc04d6d147ab%3A0x1e3c3d8b0e5b5c5d!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1234567890"
+                width="100%" 
+                height="300" 
+                style={{border: 0}} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Beverly Hills 90210 Service Area Map"
+              ></iframe>
+            </div>
             <div className="grid md:grid-cols-3 gap-8">
               <div>
-                <h4 className="text-xl font-bold text-gray-800 mb-4">Primary Service Area</h4>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Primary Service Area</h3>
                 <p className="text-gray-600">90210 - Beverly Hills</p>
               </div>
               <div>
-                <h4 className="text-xl font-bold text-gray-800 mb-4">Extended Coverage</h4>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Extended Coverage</h3>
                 <p className="text-gray-600">90211, 90212 (on request)</p>
               </div>
               <div>
-                <h4 className="text-xl font-bold text-gray-800 mb-4">Nearby Areas</h4>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Nearby Areas</h3>
                 <p className="text-gray-600">
                   <a href="/plumbing/santa-monica-90401/" className="text-blue-600 hover:text-blue-800">Santa Monica</a> | 
                   <a href="/plumbing/downtown-los-angeles-90013/" className="text-blue-600 hover:text-blue-800 ml-2">Downtown LA</a>
