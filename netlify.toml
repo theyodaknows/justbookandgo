@@ -1,6 +1,6 @@
 [build]
-  publish = "out"
-  command = "npm run deploy"
+  command = "npm run build"
+  publish = ".next"
 
 [build.environment]
   NODE_VERSION = "18"
@@ -8,6 +8,9 @@
   NEXT_PUBLIC_PHONE = "833-413-3478"
   NEXT_PUBLIC_BUSINESS_NAME = "Justbookandgo"
   NEXT_PUBLIC_DOMAIN = "justbookandgo.com"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
 [[redirects]]
   from = "/bh-plumber"
