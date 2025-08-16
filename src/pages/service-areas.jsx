@@ -131,6 +131,7 @@ const ServiceAreas = () => {
                                 service === 'electrical' && citySlug === 'glendale' ? `/electrical/glendale-91203/` :
                                 service === 'plumbing' && citySlug === 'santa-monica' ? `/plumbing/santa-monica-90401/` :
                               service === 'hvac' && citySlug === 'burbank' ? `/hvac/burbank-91505/` :
+                              service === 'electrical' && citySlug === 'pasadena' ? `/electrical/pasadena-91101/` :
                                 `/${service}/${citySlug}-${primaryZip}/`}
                           className="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2 px-4 rounded transition-colors"
                         >
