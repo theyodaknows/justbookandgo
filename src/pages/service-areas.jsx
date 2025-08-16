@@ -127,7 +127,9 @@ const ServiceAreas = () => {
                       return (
                         <Link 
                           key={serviceIndex}
-                          href={service === 'hvac' && citySlug === 'downtown-los-angeles' ? `/hvac/downtown-los-angeles-90021/` : `/${service}/${citySlug}-${primaryZip}/`}
+                          href={service === 'hvac' && citySlug === 'downtown-los-angeles' ? `/hvac/downtown-los-angeles-90021/` : 
+                                service === 'electrical' && citySlug === 'glendale' ? `/electrical/glendale-91203/` :
+                                `/${service}/${citySlug}-${primaryZip}/`}
                           className="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2 px-4 rounded transition-colors"
                         >
                           {service.charAt(0).toUpperCase() + service.slice(1)} in {area.city}
