@@ -15,6 +15,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 {/* End Google Tag Manager */}
                 {/* Favicon */}
                 <link rel="icon" type="image/png" href="/favicon.png" />
+                {/* Social Media Preview */}
+                <meta property="og:image" content="/sssm_image.png" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:image" content="/sssm_image.png" />
                             </Head>
             <body className="antialiased bg-body text-body font-body">
                 {/* Google Tag Manager (noscript) */}
