@@ -4,6 +4,9 @@ const IndexSectionCustomComponents2 = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const videoRef = useRef(null);
 
+    // Slugify helper function
+    const slugify = s => String(s).toLowerCase().replace(/<[^>]*>/g, '').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
     useEffect(() => {
         if (videoRef.current) {
             videoRef.current.play().catch(() => {
@@ -226,65 +229,65 @@ const IndexSectionCustomComponents2 = () => {
         <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
           <h3 className="text-xl font-bold text-gray-800 mb-3">Beverly Hills</h3>
           <div className="space-y-2">
-            <a href="/plumbing/beverly-hills-90210/" className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
-            <a href="/hvac/beverly-hills-90210/" className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
-            <a href="/electrical/beverly-hills-90210/" className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
+            <a href={`/plumbing/${slugify('beverly-hills-90210')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
+            <a href={`/hvac/${slugify('beverly-hills-90210')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
+            <a href={`/electrical/${slugify('beverly-hills-90210')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
           </div>
         </div>
         <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
           <h3 className="text-xl font-bold text-gray-800 mb-3">Santa Monica</h3>
           <div className="space-y-2">
-            <a href="/plumbing/santa-monica-90401/" className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
-            <a href="/hvac/santa-monica-90401/" className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
-            <a href="/electrical/santa-monica-90401/" className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
+            <a href={`/plumbing/${slugify('santa-monica-90401')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
+            <a href={`/hvac/${slugify('santa-monica-90401')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
+            <a href={`/electrical/${slugify('santa-monica-90401')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
           </div>
         </div>
         <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
           <h3 className="text-xl font-bold text-gray-800 mb-3">Pasadena</h3>
           <div className="space-y-2">
-            <a href="/plumbing/pasadena-91101/" className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
-            <a href="/hvac/pasadena-91101/" className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
-            <a href="/electrical/pasadena-91101/" className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
+            <a href={`/plumbing/${slugify('pasadena-91101')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
+            <a href={`/hvac/${slugify('pasadena-91101')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
+            <a href={`/electrical/${slugify('pasadena-91101')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
           </div>
         </div>
         <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
           <h3 className="text-xl font-bold text-gray-800 mb-3">Glendale</h3>
           <div className="space-y-2">
-            <a href="/plumbing/glendale-91203/" className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
-            <a href="/hvac/glendale-91203/" className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
-            <a href="/electrical/glendale-91203/" className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
+            <a href={`/plumbing/${slugify('glendale-91203')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
+            <a href={`/hvac/${slugify('glendale-91203')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
+            <a href={`/electrical/${slugify('glendale-91203')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
           </div>
         </div>
         <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
           <h3 className="text-xl font-bold text-gray-800 mb-3">Burbank</h3>
           <div className="space-y-2">
-            <a href="/plumbing/burbank-91505/" className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
-            <a href="/hvac/burbank-91505/" className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
-            <a href="/electrical/burbank-91505/" className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
+            <a href={`/plumbing/${slugify('burbank-91505')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
+            <a href={`/hvac/${slugify('burbank-91505')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
+            <a href={`/electrical/${slugify('burbank-91505')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
           </div>
         </div>
         <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
           <h3 className="text-xl font-bold text-gray-800 mb-3">Long Beach</h3>
           <div className="space-y-2">
-            <a href="/plumbing/long-beach-90802/" className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
-            <a href="/hvac/long-beach-90813/" className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
-            <a href="/electrical/long-beach-90806/" className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
+            <a href={`/plumbing/${slugify('long-beach-90802')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
+            <a href={`/hvac/${slugify('long-beach-90813')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
+            <a href={`/electrical/${slugify('long-beach-90806')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
           </div>
         </div>
         <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
           <h3 className="text-xl font-bold text-gray-800 mb-3">Torrance</h3>
           <div className="space-y-2">
-            <a href="/plumbing/torrance-90503/" className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
-            <a href="/hvac/torrance-90501/" className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
-            <a href="/electrical/torrance-90505/" className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
+            <a href={`/plumbing/${slugify('torrance-90503')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
+            <a href={`/hvac/${slugify('torrance-90501')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
+            <a href={`/electrical/${slugify('torrance-90505')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
           </div>
         </div>
         <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
           <h3 className="text-xl font-bold text-gray-800 mb-3">Downtown LA</h3>
           <div className="space-y-2">
-            <a href="/plumbing/downtown-los-angeles-90013/" className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
-            <a href="/hvac/downtown-los-angeles-90021/" className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
-            <a href="/electrical/downtown-los-angeles-90013/" className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
+            <a href={`/plumbing/${slugify('downtown-los-angeles-90013')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">Plumbing Services</a>
+            <a href={`/hvac/${slugify('downtown-los-angeles-90021')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">HVAC Services</a>
+            <a href={`/electrical/${slugify('downtown-los-angeles-90013')}/`} className="block text-blue-600 hover:text-blue-800 transition-colors">Electrical Services</a>
           </div>
         </div>
       </div>
