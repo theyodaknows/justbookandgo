@@ -1,9 +1,13 @@
 [build]
   publish = "out"
-  command = "npm run build && npm run export"
+  command = "npm run deploy"
 
 [build.environment]
   NODE_VERSION = "18"
+  NEXT_PUBLIC_GTM_ID = "GTM-TXTHSMB2"
+  NEXT_PUBLIC_PHONE = "833-413-3478"
+  NEXT_PUBLIC_BUSINESS_NAME = "Justbookandgo"
+  NEXT_PUBLIC_DOMAIN = "justbookandgo.com"
 
 [[redirects]]
   from = "/bh-plumber"
@@ -79,15 +83,3 @@
   from = "/ev-chargers-pasadena"
   to = "/electrical/pasadena-91101/"
   status = 301
-
-# Catch-all for SPA routing
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-[context.production.environment]
-  NEXT_PUBLIC_GTM_ID = "GTM-TXTHSMB2"
-  NEXT_PUBLIC_PHONE = "833-413-3478"
-  NEXT_PUBLIC_BUSINESS_NAME = "Justbookandgo"
-  NEXT_PUBLIC_DOMAIN = "justbookandgo.com"
