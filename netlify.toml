@@ -1,0 +1,93 @@
+[build]
+  publish = "out"
+  command = "npm run build && npm run export"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/bh-plumber"
+  to = "/plumbing/beverly-hills-90210/"
+  status = 301
+
+[[redirects]]
+  from = "/dtla-hvac"
+  to = "/hvac/downtown-los-angeles-90021/"
+  status = 301
+
+[[redirects]]
+  from = "/glendale-electric"
+  to = "/electrical/glendale-91203/"
+  status = 301
+
+[[redirects]]
+  from = "/sm-plumber"
+  to = "/plumbing/santa-monica-90401/"
+  status = 301
+
+[[redirects]]
+  from = "/burbank-hvac"
+  to = "/hvac/burbank-91505/"
+  status = 301
+
+[[redirects]]
+  from = "/pasadena-electric"
+  to = "/electrical/pasadena-91101/"
+  status = 301
+
+[[redirects]]
+  from = "/lb-plumber"
+  to = "/plumbing/long-beach-90802/"
+  status = 301
+
+[[redirects]]
+  from = "/lb-hvac"
+  to = "/hvac/long-beach-90813/"
+  status = 301
+
+[[redirects]]
+  from = "/lb-electric"
+  to = "/electrical/long-beach-90806/"
+  status = 301
+
+[[redirects]]
+  from = "/torrance-plumber"
+  to = "/plumbing/torrance-90503/"
+  status = 301
+
+[[redirects]]
+  from = "/torrance-hvac"
+  to = "/hvac/torrance-90501/"
+  status = 301
+
+[[redirects]]
+  from = "/torrance-electric"
+  to = "/electrical/torrance-90505/"
+  status = 301
+
+[[redirects]]
+  from = "/emergency-plumber-90210"
+  to = "/plumbing/beverly-hills-90210/"
+  status = 301
+
+[[redirects]]
+  from = "/rtu-repair-dtla"
+  to = "/hvac/downtown-los-angeles-90021/"
+  status = 301
+
+[[redirects]]
+  from = "/ev-chargers-pasadena"
+  to = "/electrical/pasadena-91101/"
+  status = 301
+
+# Catch-all for SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[context.production.environment]
+  NEXT_PUBLIC_GTM_ID = "GTM-TXTHSMB2"
+  NEXT_PUBLIC_PHONE = "833-413-3478"
+  NEXT_PUBLIC_BUSINESS_NAME = "Justbookandgo"
+  NEXT_PUBLIC_DOMAIN = "justbookandgo.com"
