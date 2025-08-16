@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const IndexSectionCustomComponents2 = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return (
         <div>
   {/* Header */}
@@ -14,7 +16,91 @@ const IndexSectionCustomComponents2 = () => {
         <span style={{color: '#FF6B00'}}>book</span>
         <span style={{color: '#0A84FF'}}>andgo</span>
       </div>
-      <a href="tel:833-413-3478" className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-semibold text-sm transition-colors">📞 833-413-3478</a>
+      
+      {/* Desktop Navigation */}
+      <div className="hidden md:flex items-center space-x-6">
+        <a href="#services" className="text-white hover:text-orange-400 transition-colors">Services</a>
+        <a href="/service-areas/" className="text-white hover:text-orange-400 transition-colors">Areas</a>
+        <a href="#" className="text-white hover:text-orange-400 transition-colors">About</a>
+        
+        {/* Customer Portal Button */}
+        <button 
+          data-token='bb0cf531c471455bb1cdb50364bd033f' 
+          data-orgname='Just-Book-and-Go' 
+          onClick={() => window.open('https://client.housecallpro.com/customer_portal/request-link?token=bb0cf531c471455bb1cdb50364bd033f', '_blank')}
+          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full font-medium text-sm transition-colors"
+        >
+          LOG IN TO PORTAL
+        </button>
+        
+        <a href="tel:833-413-3478" className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-semibold text-sm transition-colors">📞 833-413-3478</a>
+      </div>
+
+      {/* Mobile Menu Button */}
+      <div className="md:hidden flex items-center space-x-4">
+        <a href="tel:833-413-3478" className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors">📞 Call</a>
+        <button 
+          className="navbar-burger flex items-center text-white p-3"
+          onClick={() => setIsMenuOpen(true)}
+        >
+          <svg className="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <div className={`navbar-menu relative z-50 ${isMenuOpen ? '' : 'hidden'}`}>
+        <div 
+          className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"
+          onClick={() => setIsMenuOpen(false)}
+        ></div>
+        <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+          <div className="flex items-center mb-8">
+            <div className="text-2xl font-bold text-gray-800 tracking-tight">
+              Just
+              <span style={{color: '#FF6B00'}}>book</span>
+              <span style={{color: '#0A84FF'}}>andgo</span>
+            </div>
+            <button 
+              className="navbar-close absolute top-6 right-6 cursor-pointer"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <svg className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ul>
+              <li className="mb-1">
+                <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#services">Services</a>
+              </li>
+              <li className="mb-1">
+                <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/service-areas/">Service Areas</a>
+              </li>
+              <li className="mb-1">
+                <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">About</a>
+              </li>
+              <li className="mb-1">
+                <button 
+                  data-token='bb0cf531c471455bb1cdb50364bd033f' 
+                  data-orgname='Just-Book-and-Go' 
+                  onClick={() => window.open('https://client.housecallpro.com/customer_portal/request-link?token=bb0cf531c471455bb1cdb50364bd033f', '_blank')}
+                  className="block w-full text-left p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                >
+                  Customer Portal
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div className="mt-auto">
+            <div className="pt-6">
+              <a className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-orange-600 hover:bg-orange-700 rounded-xl" href="tel:833-413-3478">📞 833-413-3478</a>
+            </div>
+          </div>
+        </nav>
+      </div>
     </nav>
     {/* Hero Section */}
     <div className="relative z-10 px-4 py-16 md:py-32 text-center flex flex-col justify-center min-h-screen">
