@@ -310,6 +310,40 @@ const IndexSectionCustomComponents2 = () => {
           </ul>
         </div>
       </div>
+      
+      {/* Payment Methods */}
+      <div className="border-t border-gray-700 pt-8 mb-8">
+        <h3 className="text-lg font-bold mb-4 text-center">We Accept</h3>
+        <div className="flex justify-center items-center space-x-6 flex-wrap">
+          <div className="bg-white rounded px-3 py-2 mb-2">
+            <span className="text-blue-600 font-bold text-sm">VISA</span>
+          </div>
+          <div className="bg-white rounded px-3 py-2 mb-2">
+            <span className="text-red-600 font-bold text-sm">MasterCard</span>
+          </div>
+          <div className="bg-white rounded px-3 py-2 mb-2">
+            <span className="text-blue-800 font-bold text-sm">AMEX</span>
+          </div>
+          <div className="bg-white rounded px-3 py-2 mb-2">
+            <span className="text-orange-600 font-bold text-sm">Discover</span>
+          </div>
+          <div className="bg-white rounded px-3 py-2 mb-2">
+            <span className="text-gray-800 font-bold text-sm">Cash</span>
+          </div>
+          <div className="bg-white rounded px-3 py-2 mb-2">
+            <span className="text-gray-800 font-bold text-sm">Check</span>
+          </div>
+        </div>
+      </div>
+      
+      {/* Legal Links */}
+      <div className="border-t border-gray-700 pt-8 mb-8 text-center">
+        <div className="flex justify-center space-x-6 text-sm">
+          <a href="/privacy-policy/" className="text-gray-400 hover:text-orange-400 transition-colors">Privacy Policy</a>
+          <a href="/terms-and-conditions/" className="text-gray-400 hover:text-orange-400 transition-colors">Terms & Conditions</a>
+        </div>
+      </div>
+      
       <div className="border-t border-gray-700 pt-8 text-center text-gray-400">
         <p>© 2024 Justbookandgo. All rights reserved. | Licensed, Bonded & Insured in Los Angeles County</p>
       </div>
