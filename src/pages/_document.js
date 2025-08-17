@@ -14,7 +14,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 }} />
                 {/* End Google Tag Manager */}
                 {/* Favicon */}
-                <link rel="icon" type="image/png" href="/favicon.png" />
+                <link rel="icon" type="image/png" href="/favicon.ico" />
                 {/* Social Media Preview */}
                 <meta property="og:image" content="/sssm_image.png" />
                 <meta property="og:image:width" content="1200" />
