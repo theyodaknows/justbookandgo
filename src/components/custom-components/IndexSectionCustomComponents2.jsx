@@ -160,7 +160,7 @@ const IndexSectionCustomComponents2 = () => {
             👉 Plumbing, HVAC & Electrical Services in Los Angeles — Book in Seconds!
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto">
-            Trusted, licensed professionals serving homes and businesses across Los Angeles. Same-day service, upfront pricing, and guaranteed work.
+            Trusted, licensed, vetted professionals serving homes and businesses across Los Angeles. Same-day service, upfront pricing, and guaranteed work.
           </p>
 
           {/* CTA Buttons */}
@@ -189,7 +189,7 @@ const IndexSectionCustomComponents2 = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-800 mb-4 tracking-tight">
-              Our Expert Home Services in Los Angeles
+              Providing Expert Home Services in Los Angeles
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -368,10 +368,10 @@ const IndexSectionCustomComponents2 = () => {
           </div>
         <div className="space-y-8">
             {[
-              ['Do you offer 24/7 plumbing service in Los Angeles?', 'Yes! Our licensed plumbers are available day and night for emergency repairs.'],
+              ['Do you offer 24/7 plumbing service in Los Angeles?', 'Yes! Our vetted licensed plumbers are available day and night for emergency repairs.'],
               ['How fast can you send an HVAC technician?', 'In most Los Angeles areas, we can arrive same-day — often within 2 hours.'],
               ['Do you service both homes and businesses?', 'Absolutely. We provide residential and commercial HVAC, plumbing, and electrical services across Los Angeles County.'],
-              ['Are your electricians licensed in California?', 'Yes, all of our technicians are licensed, bonded, and insured.'],
+              ['Are your electricians licensed in California?', 'Yes, all of our vetted technicians are licensed, bonded, and insured.'],
             ].map(([q, a]) => (
               <div className="bg-white rounded-lg p-6 shadow-md" key={q}>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">{q}</h3>
@@ -417,8 +417,8 @@ const IndexSectionCustomComponents2 = () => {
                 Your trusted partner for all home service needs in Los Angeles. Fast, reliable, and professional.
               </p>
               <div className="text-gray-300 mb-4">
-                <p>123 Main Street</p>
-                <p>Los Angeles, CA 90013</p>
+                <p></p>
+                <p>Los Angeles, CA</p>
               </div>
               <a href="tel:833-413-3478" className="text-orange-400 font-bold">📞 833-413-3478</a>
             </div>
@@ -514,7 +514,7 @@ const IndexSectionCustomComponents2 = () => {
           </div>
 
           <div className="border-t border-gray-700 pt-8 text-center text-gray-400">
-            <p>© 2024 Justbookandgo. All rights reserved. | Licensed, Bonded & Insured in Los Angeles County</p>
+            <p>© 2024 Justbookandgo. All rights reserved. | Providing Licensed, Bonded & Insured Pros in Los Angeles County</p>
           </div>
         </div>
       </footer>
